@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>ParanaTiger Inc. Laboratories</title>
+</head>
+<body>
+    <section id="del" class="del" style="display:none">
+        
+    <header>
+        <h1>Delivery</h1>
+        <address>
+            <p>ParanaTiger Inc.</p>
+            <p>101 E. Lemon Ave<br>Sim companies</p>
+            <p>(800) 555-1234</p>
+        </address>
+        <span><img alt="" src="http://www.jonathantneal.com/examples/invoice/logo.png"><input type="file"
+                accept="image/*"></span>
+    </header>
+    <article>
+        <!-- <h1>Recipient</h1>
+        <address contenteditable>
+            <p>-<br>-</p>
+        </address> -->
+        <!-- <table class="meta">
+            <tr>
+                <th><span contenteditable>Invoice #</span></th>
+                <td><span contenteditable>101138</span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Date</span></th>
+                <td><span contenteditable>January 1, 2012</span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Amount Due</span></th>
+                <td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+            </tr>
+        </table> -->
+        <table class="inventory">
+            <thead>
+                <tr>
+                    <th><span >Item</span></th>
+                    <th><span >To be Delivered</span></th>
+                    <th><span >Rate</span></th>
+                    <th><span >Delivered</span></th>
+                    <th><span >Amount Paid</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a class="cut" style="display:none">-</a><span >Chemistry Research</span></td>
+                    <td><span >70.000 units</span></td>
+                    <td><span data-prefix>$</span><span >163.00</span></td>
+                    <td><span >0</span></td>
+                    <td><span data-prefix>$</span><span>600.00</span></td>
+                </tr>
+
+                <tr>
+                    <td><a class="cut" style="display:none">-</a><span >Materials Research</span></td>
+                    <td><span >52.000 units</span></td>
+                    <td><span data-prefix>$</span><span >218.00</span></td>
+                    <td><span >0</span></td>
+                    <td><span data-prefix>$</span><span>600.00</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="add" style="display:none">+</a>
+        <table class="balance">
+            <tr>
+                <th><span >Total amount paid</span></th>
+                <td><span data-prefix>$</span><span>600.00</span></td>
+            </tr>
+            <!-- <tr>
+                <th><span contenteditable>Amount Paid</span></th>
+                <td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Balance Due</span></th>
+                <td><span data-prefix>$</span><span>600.00</span></td>
+            </tr> -->
+        </table>
+    </article>
+    <!-- <aside>
+        <h1><span contenteditable>Additional Notes</span></h1>
+        <div contenteditable>
+            <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+        </div>
+    </aside> -->
+    </section>
+
+    <div class="login-modal">
+        <div class="modal-inner">
+          <div class="modal-top">
+            <!-- <i class="material-icons">exit_to_app</i> -->
+            <h1>ParanaTiger Inc.</h1>
+            <br>
+            <h4>LABORATORIES</h4>
+          </div>
+          <div class="modal-content">
+            <form class="login-form">
+              <fieldset class="form-group">
+                <span id="wrong_pass"></span>
+                <input id="pass" class="form-control" type="password" placeholder="Key" required>
+              </fieldset>
+              <!-- <fieldset class="form-group">
+                <input class="form-control" type="password" placeholder="Password" required>
+              </fieldset> -->
+              <button id="access" class="btn btn-primary access" style="margin-top:20px" type="submit">Access</button>
+              <span>
+                <a href="#0" class="register-link">Forgot your ID key?</a>
+              </span>
+            </form>
+            <div class="register-slide">
+              <a href="#0" class="close-register">
+                <i class="lnr lnr-cross"></i>
+              </a>
+              <p>Contact ParanaTiger Inc. in game for a solution</p>
+              <a href="https://www.simcompanies.com/company/0/ParanaTiger%20Inc./" class="close-modal btn btn-primary">Contact</a>
+            </div>
+          </div>
+          <div class="modal-bottom">
+            <a href="#0" class="modal-btn" id="login">Deliveries</a>
+            <a href="https://www.simcompanies.com/company/0/ParanaTiger%20Inc./" class="modal-btn" id="guest">Guest</a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+        <!-- Agrega el CDN de Bootstrap JS (Incluyendo Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu código jQuery y otros scripts aquí -->
+      
+    <script type="text/javascript" src="main.js"></script>
+
+
+    <script type="text/javascript" src="delivery.js"></script>
+</body>
+</html>
