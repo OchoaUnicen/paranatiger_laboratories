@@ -1,1 +1,2 @@
-# paranatiger_sim_companies
+# ParanaTiger Inc.
+# Sim companies
