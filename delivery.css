@@ -77,6 +77,11 @@ article address { float: left; font-size: 125%; font-weight: bold; }
 /* table meta & balance */
 
 table.meta, table.balance { float: right; width: 36%; }
+
+
+table.balance { float: left; width: 36%; }
+
+
 table.meta:after, table.balance:after { clear: both; content: ""; display: table; }
 
 /* table meta */
